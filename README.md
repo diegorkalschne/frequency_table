@@ -1,16 +1,8 @@
-# tabela_distribuicao
+# Frequency Tables
+Sistema desenvolvido durante o 5º semestre do curso de Ciência de Computação da UNIJUÍ (2023), para a disciplina de Ciência dos Dados.
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## O Projeto
+O projeto consiste em um site que cria uma tabela de distribuição de frequências (para se trabalhar com classes) a partir dos dados de entrada informados.
+- Informe os dados diretamente no campo de texto;
+- Leia arquivos .txt contendo os números de entrada;
+- Leia arquivos do Excel contendo os números de entrada;

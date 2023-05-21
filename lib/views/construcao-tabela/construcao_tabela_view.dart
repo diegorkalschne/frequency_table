@@ -707,14 +707,18 @@ class _ConstrucaoTabelaViewState extends State<ConstrucaoTabelaView> {
                       ),
                     ),
                     const SizedBox(height: 20),
-                    HelpWidget(
-                      onHelp: const HelpNumeroClasses(),
-                      child: CsTextfield(
-                        label: 'Número de Classes (k)',
-                        controller: TextEditingController(text: tableStore.numeroClasses!.toString()),
-                        enabled: false,
-                        textAlign: TextAlign.center,
-                      ),
+                    Observer(
+                      builder: (_) {
+                        return HelpWidget(
+                          onHelp: const HelpNumeroClasses(),
+                          child: CsTextfield(
+                            label: 'Número de Classes (k)',
+                            controller: TextEditingController(text: tableStore.numeroClasses!.toString()),
+                            enabled: false,
+                            textAlign: TextAlign.center,
+                          ),
+                        );
+                      },
                     ),
                     const SizedBox(height: 20),
                     CsTextfield(
