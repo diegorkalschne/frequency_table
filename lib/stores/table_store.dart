@@ -75,7 +75,7 @@ abstract class _TableStore with Store {
       return null;
     }
 
-    if (_numbers!.length < 25) {
+    if (_numbers!.length <= 25) {
       if (lastClassLimiteSuperior == _limiteSuperior) {
         return 6;
       }
@@ -105,7 +105,7 @@ abstract class _TableStore with Store {
   List<ClassModel>? get classes => _classes;
 
   @computed
-  int get lastClassLimiteSuperior => _classes?.last.limiteSuperior ?? 0;
+  int get lastClassLimiteSuperior => _classes?[classes!.length - 2].limiteSuperior ?? 0;
 
   @computed
   int? get totalFi => classes?.fold(0, (previousValue, e) => previousValue! + e.frequenciaAbsoluta);

@@ -6,3 +6,6 @@ O projeto consiste em um site que cria uma tabela de distribuição de frequênc
 - Informe os dados diretamente no campo de texto;
 - Leia arquivos .txt contendo os números de entrada;
 - Leia arquivos do Excel contendo os números de entrada;
+
+## Debug
+Flutter version: 3.7.0
