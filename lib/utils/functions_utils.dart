@@ -6,13 +6,15 @@ List<double>? convertNumbersList(String data, [String? delimiter]) {
 
     List<String> sData = data.split(delimiter!);
 
-    final result = sData.map((e) => double.parse(e.trim())).toList();
+    final result = sData.map((e) => double.tryParse(e.trim())).toList();
+
+    result.removeWhere((e) => e == null);
 
     if (result.length < 5) {
       return null;
     }
 
-    return result;
+    return result.cast<double>();
   } catch (_) {
     return null;
   }
