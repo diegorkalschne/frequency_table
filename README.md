@@ -1,6 +1,12 @@
 # Frequency Tables
 Sistema desenvolvido durante o 5º semestre do curso de Ciência de Computação da UNIJUÍ (2023), para a disciplina de Ciência dos Dados.
 
+## Autores
+- Diego Rafael Kalschne
+- Guilherme Izidro Leal
+- Lucas Bohnen
+- Matheus Rafalski
+
 ## O Projeto
 O projeto consiste em um site que cria uma tabela de distribuição de frequências (para se trabalhar com classes) a partir dos dados de entrada informados.
 - Informe os dados diretamente no campo de texto;
