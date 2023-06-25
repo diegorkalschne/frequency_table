@@ -6,4 +6,6 @@ class LocalRoutes {
   static const CONSTRUCAO_TABELA = '/construcao-tabelas';
 
   static const PRINTER_TABLE = '/printer-table';
+
+  static const HISTOGRAM_GRAPH = '/histogram';
 }

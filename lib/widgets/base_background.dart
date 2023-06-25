@@ -19,7 +19,7 @@ class BaseBackground extends StatelessWidget {
           image: const AssetImage(AssetsPath.BACKGROUND_IMAGE),
           fit: BoxFit.cover,
           colorFilter: ColorFilter.mode(
-            Colors.black.withOpacity(0.95),
+            Colors.black.withOpacity(0.75),
             BlendMode.luminosity,
           ),
         ),

@@ -231,14 +231,28 @@ class _ConstrucaoTabelaViewState extends State<ConstrucaoTabelaView> {
                                 children: [
                                   Container(
                                     margin: const EdgeInsets.only(right: 10, top: 5),
-                                    child: CsIconButton(
-                                      tooltip: 'Imprimir Tabela',
-                                      onPressed: () => getIt<NavigationService>().pushNamed(LocalRoutes.PRINTER_TABLE, args: tableStore),
-                                      icon: const CsIcon.icon(
-                                        icon: Icons.print_rounded,
-                                        color: Colors.white,
-                                        size: 35,
-                                      ),
+                                    child: Row(
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        CsIconButton(
+                                          tooltip: 'Visualizar Histograma',
+                                          onPressed: () => getIt<NavigationService>().pushNamed(LocalRoutes.HISTOGRAM_GRAPH, args: tableStore.classes),
+                                          icon: const CsIcon.icon(
+                                            icon: Icons.bar_chart_rounded,
+                                            color: Colors.white,
+                                            size: 35,
+                                          ),
+                                        ),
+                                        CsIconButton(
+                                          tooltip: 'Imprimir Tabela',
+                                          onPressed: () => getIt<NavigationService>().pushNamed(LocalRoutes.PRINTER_TABLE, args: tableStore),
+                                          icon: const CsIcon.icon(
+                                            icon: Icons.print_rounded,
+                                            color: Colors.white,
+                                            size: 35,
+                                          ),
+                                        ),
+                                      ],
                                     ),
                                   ),
                                   DataTable(
@@ -463,14 +477,28 @@ class _ConstrucaoTabelaViewState extends State<ConstrucaoTabelaView> {
                               children: [
                                 Container(
                                   margin: const EdgeInsets.only(right: 10, top: 5),
-                                  child: CsIconButton(
-                                    tooltip: 'Imprimir Tabela',
-                                    onPressed: () => getIt<NavigationService>().pushNamed(LocalRoutes.PRINTER_TABLE, args: tableStore),
-                                    icon: const CsIcon.icon(
-                                      icon: Icons.print_rounded,
-                                      color: Colors.white,
-                                      size: 35,
-                                    ),
+                                  child: Row(
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      CsIconButton(
+                                        tooltip: 'Visualizar Histograma',
+                                        onPressed: () => getIt<NavigationService>().pushNamed(LocalRoutes.HISTOGRAM_GRAPH, args: tableStore.classes),
+                                        icon: const CsIcon.icon(
+                                          icon: Icons.bar_chart_rounded,
+                                          color: Colors.white,
+                                          size: 35,
+                                        ),
+                                      ),
+                                      CsIconButton(
+                                        tooltip: 'Imprimir Tabela',
+                                        onPressed: () => getIt<NavigationService>().pushNamed(LocalRoutes.PRINTER_TABLE, args: tableStore),
+                                        icon: const CsIcon.icon(
+                                          icon: Icons.print_rounded,
+                                          color: Colors.white,
+                                          size: 35,
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ),
                                 DataTable(

@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 
 import 'consts/routes/local_routes.dart';
+import 'models/class_model.dart';
 import 'stores/table_store.dart';
 import 'views/construcao-tabela/construcao_tabela_view.dart';
 import 'views/entrada-dados/entrada_dados_view.dart';
+import 'views/histogram-graph/histogram_graph_view.dart';
 import 'views/printer-table/printer_table_view.dart';
 
 class RouterApp {
@@ -29,6 +31,14 @@ class RouterApp {
 
         return _PageBuilder(
           child: PrinterTableView(tableStore: tableStore),
+          settings: settings,
+        );
+
+      case LocalRoutes.HISTOGRAM_GRAPH:
+        final classes = settings.arguments as List<ClassModel>;
+
+        return _PageBuilder(
+          child: HistogramGraphView(classes: classes),
           settings: settings,
         );
 
